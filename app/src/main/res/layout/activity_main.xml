@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.classy.heatmap.HeatmapLayout
+        android:id="@+id/heatmap_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:backgroundTint="#FFEB3B">
+
+        <Button
+            android:id="@+id/BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="hi" />
+
+    </com.classy.heatmap.HeatmapLayout>
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <Button
+        android:id="@+id/btn_save_graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Graph" />
+
+    <Button
+        android:id="@+id/btn_save_heatmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Heatmap" />
+
+</LinearLayout>
