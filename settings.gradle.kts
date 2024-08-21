@@ -21,5 +21,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "HeatMap"
-include(":app")
+
 include(":heatmaplibrary")
