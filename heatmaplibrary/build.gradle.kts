@@ -29,6 +29,9 @@ android {
     }
 
     @Suppress("UnstableApiUsage")
+    testFixtures {
+        enable = true
+    }
     publishing {
         singleVariant("release") {
             withSourcesJar()
