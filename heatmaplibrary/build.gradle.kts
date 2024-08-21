@@ -47,13 +47,14 @@ publishing {
             }
             groupId = "com.github.MaayanShiran"
             artifactId = "HeatMap_v6"
-            version = "1.00.02"
+            version = "1.00.03"
         }
     }
 }
 
 dependencies {
-    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+ //   implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+ api("com.github.PhilJay:MPAndroidChart:v3.1.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     testImplementation(libs.junit)
