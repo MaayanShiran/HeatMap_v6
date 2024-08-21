@@ -1,16 +1,12 @@
-package com.classy.heatmap;
+package com.classy.heatmaplibrary;
 
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.os.Environment;
 import android.view.View;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
@@ -79,21 +75,4 @@ public class GradientHeatmapView extends View {
         return bitmap;
     }
 
-    public void saveHeatmapToFile(Bitmap bitmap) {
-        String fileName = "heatmap_" + System.currentTimeMillis() + ".png";
-        File directory = new File(Environment.getExternalStorageDirectory(), "Heatmaps_1");
-
-        if (!directory.exists()) {
-            directory.mkdirs();
-        }
-
-        File file = new File(directory, fileName);
-
-        try (FileOutputStream fos = new FileOutputStream(file)) {
-            bitmap.compress(Bitmap.CompressFormat.PNG, 100, fos);
-            fos.flush();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }

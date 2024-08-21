@@ -1,6 +1,6 @@
 package com.classy.heatmap;
 
-import android.Manifest; // Import for permissions
+import android.Manifest;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -10,11 +10,9 @@ import android.os.Environment;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
-
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -22,6 +20,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
+import com.classy.heatmaplibrary.GradientHeatmapView;
+import com.classy.heatmaplibrary.HeatmapLayout;
+import com.classy.heatmaplibrary.TouchData;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.components.YAxis;
@@ -95,8 +96,11 @@ public class MainActivity extends AppCompatActivity {
 
         int index = 0;
         for (Map.Entry<String, Integer> entry : touchCounts.entrySet()) {
-            String componentName = entry.getKey().equals("Unknown") ? "Background" : entry.getKey();
-            entries.add(new BarEntry(index++, entry.getValue()));
+            String componentName = entry.getKey();
+            int touchCount = entry.getValue();
+
+            // Add an entry for the chart
+            entries.add(new BarEntry(index++, touchCount));
             componentNames.add(componentName);
         }
 

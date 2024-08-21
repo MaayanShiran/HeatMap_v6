@@ -1,20 +1,16 @@
 plugins {
-    alias(libs.plugins.android.application)
-
+    alias(libs.plugins.android.library)
+    id("maven-publish")
 }
 
 android {
-    namespace = "com.classy.heatmap"
+    namespace = "com.classy.heatmaplibrary"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.classy.heatmap"
-        minSdk = 28
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
-
+        minSdk = 26
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -26,21 +22,29 @@ android {
             )
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
+
+    @Suppress("UnstableApiUsage")
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
+
+
 dependencies {
-    implementation(libs.heatmaplibrary)
-    implementation(libs.appcompat)
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    implementation(libs.appcompat)
     implementation(libs.material)
-    implementation(libs.activity)
-    implementation(libs.constraintlayout)
-    implementation(project(":heatmaplibrary"))
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 }
+
+

@@ -1,4 +1,4 @@
-package com.classy.heatmap;
+package com.classy.heatmaplibrary;
 
 public class TouchData {
     private float x;
