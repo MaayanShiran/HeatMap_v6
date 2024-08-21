@@ -35,6 +35,7 @@ android {
 dependencies {
     implementation(libs.heatmaplibrary)
     implementation(libs.appcompat)
+   // implementation("com.github.MaayanShiran:HeatMap_v5:1.00.06")
 
    // implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
     implementation(libs.material)
