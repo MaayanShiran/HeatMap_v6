@@ -39,7 +39,18 @@ android {
     }
 }
 
-
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            afterEvaluate {
+                from(components["release"])
+            }
+            groupId = "com.github.MaayanShiran"
+            artifactId = "HeatMap_v6"
+            version = "1.00.02"
+        }
+    }
+}
 
 dependencies {
     implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
