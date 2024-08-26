@@ -11,7 +11,54 @@ This library tracks where users touch the screen and then creates a heatmap that
 * **Color-Coded Heatmap** - Uses a customizable color gradient to represent different levels of touch frequency, making it easy to identify hotspots.
 * **Overlap Detection** - Identifies and counts overlapping touch points to highlight areas of high interaction density.
 
+## Usage
 
+### XML Layout Integration
+
+Add the `HeatmapLayout` to your XML layout to start capturing and visualizing touch events:
+
+```xml
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.classy.heatmap.HeatmapLayout
+        android:id="@+id/heatmap_layout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:backgroundTint="#FFEB3B">
+
+        <Button
+            android:id="@+id/BTN"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="hi" />
+
+        <TextView
+            android:id="@+id/textview_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Test TextView"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"/>
+    </com.classy.heatmap.HeatmapLayout>
+
+    <Button
+        android:id="@+id/btn_save_graph"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Graph" />
+
+    <Button
+        android:id="@+id/btn_save_heatmap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Heatmap" />
+</LinearLayout>
 
 ## GradientHeatmapView Class
 
