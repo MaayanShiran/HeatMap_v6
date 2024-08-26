@@ -27,7 +27,7 @@ allprojects {
 Add the dependency to your module build.gradle file:
 ```
 dependencies {
-    implementation("com.github.MaayanShiran:ConfettiMakerLibrary:1.00.03")
+    implementation("com.github.MaayanShiran:HeatMap_v6:1.00.02")
 }
 ```
 
