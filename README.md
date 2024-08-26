@@ -1,10 +1,10 @@
 [![](https://jitpack.io/v/MaayanShiran/HeatMap_v6.svg)](https://jitpack.io/#MaayanShiran/HeatMap_v6)
 
-## Heat Map Library 
+# Heat Map Library 
 
 This library tracks where users touch the screen and then creates a heatmap that visually shows which parts of the screen were touched the most. The heatmap uses colors to indicate how often different areas were touched: green for less frequent touches, yellow for medium, and red for the most frequent touches.
 
-# GradientHeatmapView Class
+## GradientHeatmapView Class
 
 This class generates the heatmap drawing:
 
@@ -20,7 +20,7 @@ onDraw(Canvas canvas): This method is called when it's time to draw the heatmap 
 
 generateHeatmapBitmap(int width, int height): This method creates a picture (bitmap) that represents the heatmap. It uses colors (green, yellow, red) to show how many times different areas of the screen were touched. Green areas were touched less, red areas were touched more.
 
-# HeatmapLayout Class
+## HeatmapLayout Class
 
 This class is a custom layout that tracks touch events on the screen.
 
@@ -38,7 +38,7 @@ findViewAt(int x, int y): This method checks which part of the screen was touche
 
 onMeasure(int widthMeasureSpec, int heightMeasureSpec) and onLayout(boolean changed, int l, int t, int r, int b): These methods handle measuring and laying out the child views (like buttons, images, etc.) within this custom layout.
 
-# TouchData Class
+## TouchData Class
 
 This class represents a single touch on the screen.
 
