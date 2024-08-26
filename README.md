@@ -11,6 +11,26 @@ This library tracks where users touch the screen and then creates a heatmap that
 * **Color-Coded Heatmap** - Uses a customizable color gradient to represent different levels of touch frequency, making it easy to identify hotspots.
 * **Overlap Detection** - Identifies and counts overlapping touch points to highlight areas of high interaction density.
 
+## Installation
+
+Add the JitPack repository to your root `build.gradle` file:
+
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+```
+
+Add the dependency to your module build.gradle file:
+```
+dependencies {
+    implementation("com.github.MaayanShiran:ConfettiMakerLibrary:1.00.03")
+}
+```
+
 ## Usage
 
 ### XML Layout Integration
