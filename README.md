@@ -4,6 +4,9 @@
 
 This library tracks where users touch the screen and then creates a heatmap that visually shows which parts of the screen were touched the most. The heatmap uses colors to indicate how often different areas were touched: green for less frequent touches, yellow for medium, and red for the most frequent touches.
 
+# Features
+* Real Time Visualization - This library generates multiple types of visualized heatmap: an image or as a graph
+
 ## GradientHeatmapView Class
 
 This class generates the heatmap drawing:
