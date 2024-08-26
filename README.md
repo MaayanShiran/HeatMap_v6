@@ -45,27 +45,31 @@ Add the `HeatmapLayout` to your XML layout to start capturing and visualizing to
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <com.classy.heatmap.HeatmapLayout
-        android:id="@+id/heatmap_layout"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:backgroundTint="#FFEB3B">
+<com.classy.heatmaplibrary.HeatmapLayout
+    android:id="@+id/heatmap_layout"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:backgroundTint="#FFEB3B"
+    >
+    <Button
+        android:id="@+id/BTN"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="hi" />
 
-        <Button
-            android:id="@+id/BTN"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:gravity="center"
-            android:text="hi" />
+    <TextView
+        android:id="@+id/textview_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test TextView"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        />
 
-        <TextView
-            android:id="@+id/textview_test"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Test TextView"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="30dp"/>
-    </com.classy.heatmap.HeatmapLayout>
+</com.classy.heatmaplibrary.HeatmapLayout>
+
+
 
     <Button
         android:id="@+id/btn_save_graph"
@@ -78,7 +82,9 @@ Add the `HeatmapLayout` to your XML layout to start capturing and visualizing to
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save Heatmap" />
+
 </LinearLayout>
+
 
 ```
 
