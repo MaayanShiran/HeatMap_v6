@@ -5,9 +5,12 @@
 This library tracks where users touch the screen and then creates a heatmap that visually shows which parts of the screen were touched the most. The heatmap uses colors to indicate how often different areas were touched: green for less frequent touches, yellow for medium, and red for the most frequent touches.
 
 # Features
-* **Heatmap Visualization** - Visualizes user touch feedback on the screen.
-* **Integration with Custom Views** - Works seamlessly with custom views, enabling developers to easily integrate the heatmap overlay into their existing layouts.
-* **Component-Specific Touch Counting** - Tracks touch events by both location and the specific UI components touched, allowing for detailed analysis of user interactions with different parts of the interface.
+* **Heatmap Visualization** - Visualizes user touch feedback on the screen, highlighting areas of frequent interaction.
+* **Component-Specific Touch Counting** - Tracks touch events by both location and the specific UI components touched, allowing for detailed analysis of user interactions.
+* **Integration with Custom Views** - Works seamlessly with custom views, enabling easy integration of the heatmap overlay into existing layouts.
+* **Color-Coded Heatmap** - Uses a customizable color gradient to represent different levels of touch frequency, making it easy to identify hotspots.
+* **Overlap Detection** - Identifies and counts overlapping touch points to highlight areas of high interaction density.
+
 
 
 ## GradientHeatmapView Class
