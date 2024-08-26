@@ -1,6 +1,6 @@
 [![](https://jitpack.io/v/MaayanShiran/HeatMap_v6.svg)](https://jitpack.io/#MaayanShiran/HeatMap_v6)
 
-# Heat Map Library 
+# 🔥 Heat Map Library 
 
 This library tracks where users touch the screen and then creates a heatmap that visually shows which parts of the screen were touched the most. The heatmap uses colors to indicate how often different areas were touched: green for less frequent touches, yellow for medium, and red for the most frequent touches.
 
