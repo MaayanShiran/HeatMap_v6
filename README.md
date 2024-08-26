@@ -60,6 +60,8 @@ Add the `HeatmapLayout` to your XML layout to start capturing and visualizing to
         android:text="Save Heatmap" />
 </LinearLayout>
 
+```
+
 ## GradientHeatmapView Class
 
 This class generates the heatmap drawing:
