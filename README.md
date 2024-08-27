@@ -93,12 +93,8 @@ Add the `HeatmapLayout` to your XML layout to start capturing and visualizing to
 
 https://github.com/user-attachments/assets/404991e2-a47c-40a3-ba26-d0aa1f3d8ba6
 
-
-![heatmap_1724760423421](https://github.com/user-attachments/assets/77b02514-e3c1-4b33-9b83-5bc163cb8a27)
-
-![bar_chart_1724760422625](https://github.com/user-attachments/assets/a34c4089-b921-49a6-abb1-c889b27805c8)
-
-
+<img src="https://github.com/user-attachments/assets/77b02514-e3c1-4b33-9b83-5bc163cb8a27" alt="Heatmap Demo" width="300"/>
+<img src="https://github.com/user-attachments/assets/a34c4089-b921-49a6-abb1-c889b27805c8" alt="Bar Chart Demo" width="300"/>
 
 ## GradientHeatmapView Class
 
